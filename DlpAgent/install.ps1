@@ -5,7 +5,7 @@ param(
 
 $ErrorActionPreference = "Stop"
 
-$HostName = "com.dlp.agent"
+$HostName = "com.cadlper.agent"
 
 # Script location
 $SourceRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
@@ -20,7 +20,7 @@ $TargetHostExe = Join-Path $NativeHostDir "host.exe"
 $HostManifest  = Join-Path $NativeHostDir "$HostName.json"
 
 Write-Host ""
-Write-Host "=== DLP Agent Installer ==="
+Write-Host "=== CADLPER ==="
 Write-Host ""
 if ([string]::IsNullOrWhiteSpace($ExtensionId)) {
     $ExtensionId = Read-Host "Enter the Chrome extension ID"
